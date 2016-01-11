@@ -1,0 +1,16 @@
+/*-------------------------------------------------------*\
+    Home Page Hero
+/*-------------------------------------------------------*/
+
+.home-page-hero {
+	background-color: #efefef;
+	padding: 20px 0;
+	@include break-at($medium-break) { 
+		padding: 0;
+	}
+	.hero-content {
+		@include break-at($medium-break) {
+			min-height: 380px;
+		}
+	}
+}

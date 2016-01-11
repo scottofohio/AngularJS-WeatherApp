@@ -1,0 +1,85 @@
+/*-------------------------------------------------------*\
+    Typography
+/*-------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    margin-top: em(2px);
+    margin-bottom: em(3px);
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.25em;
+}
+
+h3 {
+    font-size: 1.1875em;
+}
+
+h4 {
+    font-size: 1.125em;
+}
+
+h5 {
+    font-size: 1.0625em;
+}
+
+h6 {
+    font-size: 1em;
+}
+@include break-at($medium-break) {
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2.25em;
+    }
+    h3 {
+        font-size: 1.9375em;
+    }
+    h4 {
+        font-size: 1.5625em;
+    }
+    h5 {
+        font-size: 1.25em;
+    }
+    h6 {
+        font-size: 1em;
+    }
+}
+
+p {
+    padding-bottom: em(10px);
+    margin: 0;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 0;
+    border-bottom: 1px solid rgba(233, 233, 233, 1);
+}
+
+ul ul, ol ol, ul ol, ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+b, strong, em, small, code {
+    line-height: 1;
+}
+
+sup, sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+
+sub {
+    top: 0.4em;
+}

@@ -1,0 +1,40 @@
+/*-------------------------------------------------------*\
+    Buttons
+/*-------------------------------------------------------*/
+
+%button {
+    display: inline-block;
+    padding: 3px 12px;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 38px;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+%button-hover {
+    outline: 0;
+    text-decoration: none;
+}
+input.button {
+    border: none;
+}
+.button, button {
+    background-color: $primary-color;
+    @extend %button;
+    color: #fff;
+    &.small {
+        padding: 2px 8px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+    &:hover, &:focus {
+        @extend %button-hover;
+        color: #fff;
+        background: #222;
+    }
+}

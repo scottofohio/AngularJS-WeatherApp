@@ -1,0 +1,110 @@
+/*-------------------------------------------------------*\
+    Tables
+/*-------------------------------------------------------*/
+
+table {
+
+	margin-bottom: 2.5rem;
+
+}
+
+th,
+td {
+
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1;
+
+}
+
+th:first-child,
+td:first-child {
+
+  padding-left: 0;
+
+}
+
+th:last-child,
+td:last-child {
+
+  padding-right: 0;
+
+}
+
+ .table {
+        width: 100%;
+    }
+    
+    .tr {
+        padding: 15px 0 0 0;
+        margin: 15px 0 0 0;
+        border-top: solid 1px #efefef;
+    }
+    
+    .th {
+        display: none;
+    }
+    
+    .rh > span {
+        display: block;
+        position: relative;
+    }
+    /* Insert header name before each row on mobile */
+    
+    .td:before {
+        content: attr(data-header);
+        float: left;
+        width: 25%;
+    }
+    /*CSS border triangle trick*/
+    
+    .table .rh > span:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border: 7px solid transparent;
+        border-top-color: black;
+        z-index: 2;
+        right: 15px;
+        top: 14px;
+        pointer-events: none;
+    }
+    /*Flip CSS border triangle on active*/
+    
+    .table .rh.active > span:after {
+        border-top-color: transparent;
+        border-bottom-color: black;
+        top: 5px;
+    }
+    
+    @include break-at($medium-break) {
+        .rh {
+            display: none;
+        }
+        .table {
+            display: table;
+            // width: 750px;
+            border: solid 1px #efefef;
+        }
+        .tr, .th {
+            display: table-row;
+            padding: 0;
+            margin: 0;
+            &:nth-of-type(even) {
+                background: #f7f7f7;
+            }
+        }
+        .td {
+            display: table-cell;
+            padding: 15px 10px;
+            h5 {
+                margin-bottom: 0;
+            }
+        }
+        .td:before {
+            content: "";
+        }
+    }
+    

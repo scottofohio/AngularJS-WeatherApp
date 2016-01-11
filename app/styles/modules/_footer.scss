@@ -1,0 +1,18 @@
+/*-------------------------------------------------------*\
+   	Footer
+/*-------------------------------------------------------*/
+
+.site-footer {
+    margin-top: 20px;
+    border-top: solid 1px #ddd;
+    padding: 40px 0;
+    nav.footer-nav {
+        ul {
+            width: 100%;
+            display: table;
+            li {
+            display: table-cell;
+            }
+        }
+    }
+}

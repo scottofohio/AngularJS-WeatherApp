@@ -1,0 +1,73 @@
+<div ng-controller="getWeather" ng-init="localWeather();">
+    <div class="row">
+        <div class="col medium-10 large-8 medium-centered">
+         <div class="vertical-align-small">
+             <div class="vertical-align-small_content">
+                 <h3>The Weather</h3>
+             </div>
+             <div class="vertical-align-small_content">
+                 <div class="switch-container">
+
+            <div class="switch white">
+
+                <input type="radio" name="switch" id="switch-off">
+                <input type="radio" name="switch" id="switch-on" checked>
+
+                <label for="switch-off">Off</label>
+                <label for="switch-on">On</label>
+
+                <span class="toggle"></span>
+
+            </div> <!-- end switch -->
+
+        </div> <!-- end container -->
+             </div>
+         </div>
+        
+            <div class="card weather-content">
+                <form novalidate class="location-form ">
+                    <div class="location-input">
+                        <button class="location-button" ng-click="myLocation()">Use My Current Location</button>
+                        <input type="text" ng-model="location.city" placeholder="{{results.name}}" value="" />
+                    </div>
+                    <div class="location-submit ">
+                        <button class="button small" ng-click="update(location)" >Update Location</button>
+                    </div>
+                </form>
+                <div class="card-content">
+                    <div class="row">
+                        <div class="col large-7 small-8">
+                            <p class="location-tag">Location</p>
+                            <h1>{{results.name}}, {{results.sys.country}}</h1>
+                            <h2>{{ roundedTemp | number:0 }} &deg;F</h2>
+                            <div ng-repeat="weather in results.weather">
+                                <h3>{{weather.main}} | <span>{{weather.description}}</span> </h3>
+                            </div>
+                        </div>
+                        <div class="col large-5  small-4">
+                            <div ng-repeat="weather in results.weather">
+                               <div class="weather-icon">
+                                    <img src="images/{{weather.icon}}.svg" alt="">
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="tr">
+                            <div class="td"><strong>Wind</strong></div>
+                            <div class="td">{{results.wind.speed}} mph</div>
+                        </div>
+                        <div class="tr">
+                            <div class="td"><strong>Cloudiness</strong></div>
+                            <div class="td">{{results.clouds.all}}%</div>
+                        </div>
+                        <div class="tr">
+                            <div class="td"><strong>Humidity</strong></div>
+                            <div class="td">{{results.main.humidity}}%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> <!-- ng-controller="getWeather" -->

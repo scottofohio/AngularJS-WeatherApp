@@ -1,0 +1,93 @@
+/*-------------------------------------------------------*\
+   	HEADER
+/*-------------------------------------------------------*/
+
+#primary-header {
+    border-bottom: solid 1px #ddd;
+    #site-logo {
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        display: block;
+        // background-size: 100%;
+        // background-image: url('../img/logo.jpg');
+      
+        text-transform: uppercase;
+        // width: 160px;
+        // height: 45px;
+    }
+    
+    #primary-nav { 
+        > ul {
+            width: 100%;
+            @include clearfix();
+            margin: 0;
+            display: table;
+            height: 85px;
+            > li {
+                margin: 0;
+                position: relative;
+                display: table-cell;
+                vertical-align: middle;
+                &:hover > ul {
+                    display: block;
+                }
+                > ul {
+                    list-style: none;
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    background: #fff;
+                    z-index: 1;
+                    padding: 20px;
+                }
+                a {
+                    font-size: 14px;
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    #utility-nav {
+        background-color: #343F4E;
+        @include clearfix();
+        ul {
+            margin: 0;
+            // width: 100%;
+            // max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 10px;
+            @include clearfix();
+            @include break-at($medium-break) {
+                float: right;
+            }
+            li {
+                margin: 0;
+        
+                @include break-at($medium-break) {
+                    float: left;
+                    &:last-child > a {
+                        border-right: solid 1px #adadad;
+                    }
+                }
+                a {
+                    color: #fff;
+                    font-size: 13px;
+                    display: block;
+                    &:utver {
+                        background-color: #efefef;
+                        color: $secondary-color;
+                        text-decoration: none;
+                    }
+                    padding: 10px 0;
+                    @include break-at($medium-break) {
+                        padding: 10px;
+                        border-left: solid 1px #adadad;
+                    }
+                }
+            }
+        }
+    }
+}

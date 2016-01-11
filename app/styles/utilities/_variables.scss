@@ -1,0 +1,37 @@
+/*-------------------------------------------------------*\
+    Variables
+/*-------------------------------------------------------*/
+
+$base-font-size : 16px;
+
+/*	Grid
+--------------------------------------------------------*/
+
+$grid-width: 1200px;
+
+$columns: 12 !default;
+$column-width: 65px !default;
+$gutter-width: 10px !default;
+
+// Basic or Advanced usage
+$advanced-usage: false !default;
+
+
+/* Breakpoints */
+$medium-break: 41.8125em; 
+$large-break: 64.0625em;  
+
+/*	Colors
+--------------------------------------------------------*/
+
+$primary-color: #23759f !default;
+$secondary-color: #3b3c3f  !default;
+
+
+/* Panels 
+--------------------------------------------------------*/
+
+$panel-color: #fff;
+$panel-padding: 15px;
+
+

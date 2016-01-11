@@ -1,0 +1,41 @@
+/*-------------------------------------------------------*\
+    Lists
+/*-------------------------------------------------------*/
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+    }
+}
+
+ul {
+    list-style: disc inside;
+}
+
+ol {
+    list-style: decimal inside;
+}
+
+ol, ul {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: em(10px);
+}
+
+ol ul, ul ul {
+    padding: em(5px) 0 0 em(15px);
+    list-style: circle inside;
+}
+
+ul ol, ol ol, {
+    padding: em(5px) 0 0 em(15px);
+}
+
+li {
+    margin-bottom: em(8px);
+}
