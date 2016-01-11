@@ -5,28 +5,13 @@
              <div class="vertical-align-small_content">
                  <h3>The Weather</h3>
              </div>
-                    <!--  <div class="vertical-align-small_content">
-                         <div class="switch-container">
-
-                    <div class="switch white">
-
-                        <input type="radio" name="switch" id="switch-off">
-                        <input type="radio" name="switch" id="switch-on" checked>
-
-                        <label for="switch-off">Off</label>
-                        <label for="switch-on">On</label>
-
-                        <span class="toggle"></span>
-
-                    </div>
-
-                        </div> 
-                     </div> -->
+                
          </div>
-        
+            <a ng-click="myLocation()"><i class="fa fa-location-arrow"></i> Use your Current Location</a>
             <div class="card weather-content">
                 <form novalidate class="location-form ">
                     <div class="location-input">
+                       
                         <button class="location-button" ng-click="myLocation()">Use My Current Location</button>
                         <input type="text" ng-model="location.city" placeholder="{{results.name}}" value="" />
                     </div>
