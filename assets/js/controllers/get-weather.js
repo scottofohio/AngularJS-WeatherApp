@@ -23,7 +23,7 @@ angular.module('weatherAppApp').factory('$localstorage', ['$window', function($w
     };
 }]).controller('getWeather', function($http, $scope, $localstorage) {
     var location,
-        apiKey = '2de143494c0b295cca9337e1e96b00e0',
+        apiKey = 'd5564592cf6b9120cda8004bfa16d47d',
         unitFormat = 'imperial',
         day = 'weather';
 
