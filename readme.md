@@ -4,7 +4,7 @@
 
 This app works regardless. 
 
-All you need to do is register a free api key at [Open Weather Map](openweathermap.org) and then put it in `/controllers/get-weather.js` in the `getWeather` controller.
+All you need to do is register a free api key at [Open Weather Map](https://openweathermap.org/api) and then put it in `/controllers/get-weather.js` in the `getWeather` controller.
 
 ##### API key goes here. 
 ```javascript
