@@ -1,6 +1,8 @@
 /*-------------------------------------------------------*\
     Base
 /*-------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -9,7 +11,7 @@
 body {
 
     line-height: 1.5;
-    font-family: "proxima-nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
     background: #f7f7f7;
     color: $secondary-color;

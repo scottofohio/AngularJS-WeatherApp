@@ -24,11 +24,6 @@ angular
         controller: 'getWeather',
         controllerAs: 'current-conditions'
       })
-      // .when('/five-day', {
-      //   templateUrl: 'views/five-day.html',
-      //   controller: 'getWeather',
-      //   controllerAs: 'five-day'
-      // })
       .otherwise({
         redirectTo: '/'
       });
